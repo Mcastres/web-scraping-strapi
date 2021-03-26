@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scrapers",
+  "info": {
+    "name": "scraper"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "error": {
+      "type": "json"
+    },
+    "report": {
+      "type": "json"
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "next_execution_at": {
+      "type": "string"
+    },
+    "site_generators": {
+      "via": "scraper",
+      "collection": "site-generator"
+    }
+  }
+}

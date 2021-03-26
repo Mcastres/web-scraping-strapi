@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scrapers",
+      "handler": "scraper.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scrapers/count",
+      "handler": "scraper.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scrapers/:id",
+      "handler": "scraper.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scrapers",
+      "handler": "scraper.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scrapers/:id",
+      "handler": "scraper.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scrapers/:id",
+      "handler": "scraper.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

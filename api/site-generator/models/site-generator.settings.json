@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_generators",
+  "info": {
+    "name": "site-generator"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "templates": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "stars": {
+      "type": "integer"
+    },
+    "forks": {
+      "type": "integer"
+    },
+    "issues": {
+      "type": "integer"
+    },
+    "deploy_to_netlify_link": {
+      "type": "string"
+    },
+    "scraper": {
+      "model": "scraper",
+      "via": "site_generators"
+    }
+  }
+}
